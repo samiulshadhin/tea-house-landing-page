@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/f4d12110de.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark1: '#1C1C1C',
+            dark2: '#494949',
+            dark3: '#777777',
+            orange: 'rgba(255, 137, 56, 1)',
+            red: 'rgba(255, 0, 0, 1)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .manrope-font {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
-<body>
-    
+
+<body class="manrope-font">
+  <header class="w-10/12 md:w-3/4 mx-auto">
+
+    <!-- Header Banner section -->
+    <div class="flex flex-col gap-14 md:gap-0 md:flex-row justify-between items-end mt-12 md:mt-16 mb-20">
+      <div>
+        <h1 class="text-dark1 text-[42px] md:text-6xl font-extrabold leading-[52px] md:leading-[75px] mb-3 md:mb-4">It's good <br> tea time at The <br> Tea House</h1>
+        <p class="md:w-9/12 text-dark3 text-base font-medium leading-6 mb-5">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+        <button class="text-white text-base md:text-lg font-bold bg-gradient-to-r from-orange to-red px-5 py-3 rounded-xl">
+          Explore More &nbsp <i class="fa-solid fa-arrow-right -rotate-45"></i>
+        </button>
+      </div>
+      <div class="w-full md:w-1/2 relative">
+        <img class="w-full" src="images/banner.png" alt="">
+        <div class="absolute bg-white rounded-xl px-4 md:px-5 py-3 md:py-4 drop-shadow-xl flex items-center gap-2 md:gap-4 -bottom-5 left-14 md:left-14">
+          <div>
+            <i class="fa-solid fa-star text-[#FFC850] text-2xl md:text-3xl"></i>
+          </div>
+          <div>
+            <h3 class="text-dark1 text-xl md:text-3xl font-extrabold">5.00</h3>
+            <p class="text-dark3 text-xs md:text-base font-semibold">Trust Pilot Ratings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header Banner section -->
+
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
